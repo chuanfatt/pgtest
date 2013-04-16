@@ -2,9 +2,21 @@
 function outputFormula($firstnum, $secondnum) {
     $result="";
     $temp="";
-	for($i=$firstnum;$i<$secondnum+1;$i++) {
-		$temp=checkFizzBuzz($i);
-		$result.="$temp ";
+	$checking=0;
+
+    for($i=$firstnum;$i<$secondnum+1;$i++) {
+		if(!$checking) {
+			$temp=checkFizzBuzz($i);
+			if(!is_numeric($temp)) $checking=1;
+		} else {
+			$temp=checkFizzBuzz($i);
+			if(!is_numeric($temp)) $checking=1;
+			else {
+				$temp="Bazz";
+				$checking=0;
+			}
+		}
+        $result.="$temp ";
     }      
     return $result;
 }
