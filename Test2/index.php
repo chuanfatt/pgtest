@@ -30,7 +30,7 @@ if(isset($_POST['submit'])) {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noindex, nofollow"/> 
-<title>Propguru Test 1</title>
+<title>Propguru Test 2</title>
 <style type="text/css">
 body {
   margin:0;
