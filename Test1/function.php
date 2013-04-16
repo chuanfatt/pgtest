@@ -2,17 +2,10 @@
 function outputFormula($firstnum, $secondnum) {
     $result="";
     $temp="";
-    if ($firstnum > $secondnum) {
-        for($i=$firstnum;$i>$secondnum-1;$i--) {
-            $temp=checkFizzBuzz($i);
-            $result.="$temp ";
-        }
-    } else {
-        for($i=$firstnum;$i<$secondnum+1;$i++) {
-            $temp=checkFizzBuzz($i);
-            $result.="$temp ";
-        }      
-    }
+	for($i=$firstnum;$i<$secondnum+1;$i++) {
+		$temp=checkFizzBuzz($i);
+		$result.="$temp ";
+    }      
     return $result;
 }
 
