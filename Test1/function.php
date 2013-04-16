@@ -18,6 +18,7 @@ function outputFormula($firstnum, $secondnum) {
 
 function checkFizzBuzz($checknumber) {
     $bool=0;
+    $temp=$checknumber;
     if ($checknumber % 3 == 0) {
         $temp="Fizz";
         $bool=1;
@@ -26,7 +27,6 @@ function checkFizzBuzz($checknumber) {
         if($bool) $temp.="Buzz";
         else $temp="Buzz";
     }
-    $temp=$checknumber;
     return $temp; 
 }
 ?>
